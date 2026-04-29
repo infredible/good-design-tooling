@@ -55,21 +55,39 @@ The MCP integration makes it two-way: the agent can query annotations and respon
 
 [interfaces](https://github.com/raunofreiberg/interfaces) by Rauno Freiberg is a living document of specific, opinionated details that separate good web UIs from mediocre ones — covering interactivity, typography, motion, touch, performance, and accessibility. Less "follow WCAG" and more "don't let hover states fire on touch press."
 
-Worth keeping close when building with an agent: paste the relevant sections into a `CLAUDE.md` as project rules, or convert them into a Claude Code skill so they apply across projects. Either way, it gives an agent precise, checkable criteria rather than vague design direction.
+Worth keeping close when building with an agent: paste relevant sections into a `CLAUDE.md` as project rules, or install the Vercel skill below to apply them automatically during code review.
 
-### Emil Kowalski's UI Skill
+## Skills
 
-[emilkowal.ski/skill](https://emilkowal.ski/skill) — Emil's UI principles packaged as a Claude Code skill: animations, design, code quality, and performance. Companion to his writing and animations.dev course; installs in one line.
+Installable Claude Code skills that shape how an agent approaches UI and frontend work. Install with `npx skills add <skill>`.
+
+### Anthropic Frontend Design
+
+[anthropics/skills](https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md) — Guides agents away from generic AI aesthetics toward distinctive, production-grade UI. Forces a committed aesthetic direction before any code is written: typography, color, motion, spatial composition. The explicit goal is avoiding the "AI slop" look — overused fonts, purple gradients, predictable layouts.
+
+```bash
+npx skills add anthropics/skills/frontend-design
+```
+
+### Emil Kowalski's Design Engineering Skill
+
+[emilkowalski/skill](https://github.com/emilkowalski/skill/blob/main/skills/emil-design-eng/SKILL.md) — Emil's UI polish philosophy packaged as a skill: animation decisions, invisible details that compound, the principle that taste is trained not innate. When reviewing UI code, outputs a Before/After/Why table with specific, actionable changes. Companion to his [animations.dev](https://animations.dev/) course and [Agents with Taste](https://emilkowal.ski/ui/agents-with-taste) article.
 
 ```bash
 npx skills add emilkowalski/skill
 ```
 
+### Vercel Web Design Guidelines
+
+[vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/blob/main/skills/web-design-guidelines/SKILL.md) — Applies Rauno Freiberg's [Web Interface Guidelines](https://github.com/raunofreiberg/interfaces) as a code review. Give it a file or pattern, it fetches the latest guidelines and audits your UI code against them, outputting findings in `file:line` format.
+
+```bash
+npx skills add vercel-labs/agent-skills/web-design-guidelines
+```
+
 ### Karpathy-Inspired Claude Code Guidelines
 
-[andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) is a single `CLAUDE.md` file distilled from Andrej Karpathy's observations on where LLM coding agents consistently go wrong — silent assumptions, overcomplicated solutions, touching code they shouldn't.
-
-Four principles: think before coding, simplicity first, surgical changes, goal-driven execution. Drop it into any project and Claude Code will ask before assuming, write less code, and leave unrelated things alone.
+[andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) — Addresses the specific failure modes Andrej Karpathy identified in LLM coding agents: silent assumptions, overcomplicated solutions, touching code they shouldn't. Four principles: think before coding, simplicity first, surgical changes, goal-driven execution.
 
 ```bash
 # as a Claude Code plugin (applies across all projects)
@@ -92,9 +110,9 @@ Pieces worth sitting with — on craft, quality, and what design actually means 
 
 - [Family Values](https://benji.org/family-values) — A close read of how the Family crypto wallet achieves its feel through three principles: simplicity via gradual revelation, fluidity through transitions that give the interface physical rules, and delight placed deliberately where it has the most impact.
 
-- [animations.dev](https://animations.dev/) — Course by Emil Kowalski (design engineer at Linear) covering animation theory, CSS, and Framer Motion. Goes beyond syntax into what makes motion feel natural — easing, spring physics, timing, orchestration. Includes an AI skill file for coding agents and walkthroughs of how he builds and iterates on real components.
-
 - [Tools the Vercel Product Design Team Actually Uses](https://www.hannahhearth.com/posts/tools-the-vercel-product-design-team-actually-uses) — A snapshot of how a real design team is navigating a moment where tooling is fragmenting fast. No single solution; designers on the same team using completely different stacks, variable AI adoption, and an emerging split between canvas-based work and building directly in the browser.
+
+- [animations.dev](https://animations.dev/) — Course by Emil Kowalski (design engineer at Linear) covering animation theory, CSS, and Framer Motion. Goes beyond syntax into what makes motion feel natural — easing, spring physics, timing, orchestration. Walkthroughs of how he builds and iterates on real components.
 
 - [Agents with Taste](https://emilkowal.ski/ui/agents-with-taste) — Emil Kowalski on how to get agents to produce better visual work by codifying design principles explicitly. The core insight: almost every taste decision has a logical reason behind it — document that reasoning as a skill file and an agent can follow it consistently.
 
