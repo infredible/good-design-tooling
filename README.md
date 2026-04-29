@@ -1,8 +1,8 @@
 # good-design-tooling
 
-A running list of tools worth using for design and development — with a focus on what's actually shifting as AI-assisted and agentic workflows become the default. Opinionated, not exhaustive. Updated as the space evolves.
+A running list of tools I like using for design and development in the age of AI-assisted and agentic design workflows. Opinionated, not exhaustive. Updated as the space evolves.
 
-Aimed at designers who write code and developers with strong product sense. The basics aren't explained here.
+Aimed at designers who write code and developers who design.
 
 ## Tools
 
