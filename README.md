@@ -35,6 +35,8 @@ Swap `Glass.aiff` for any file in `/System/Library/Sounds/` — `Ping.aiff`, `Fu
 
 ### UIFork
 
+<video src="assets/uifork-video.mp4" autoplay loop muted playsinline></video>
+
 [UIFork](https://github.com/sambernhardt/uifork) solves a real friction point in agentic UI work: you can generate a dozen variations with an agent, but switching between them without UIFork means branch-hopping or commenting out code.
 
 It uses file-based versioning — `Button.v1.tsx`, `Button.v2.tsx` — with a floating widget for runtime hot-swapping. Each version is a real file, so agents can generate new ones directly, you can diff them, and promoting a winner is a single command.
@@ -46,6 +48,8 @@ npx uifork watch
 ```
 
 ### Agentation
+
+<video src="assets/agentation.mp4" autoplay loop muted playsinline></video>
 
 [Agentation](https://www.agentation.com/) is a desktop tool for annotating live UI and passing that context to an agent. You hover over elements, add notes, and get back structured output — CSS selectors, file paths, component hierarchy — that an agent like Claude Code can act on directly.
 
@@ -123,5 +127,7 @@ Pieces worth sitting with — on craft, quality, and what design actually means 
 [Conductor](https://www.conductor.build/) is a macOS app for running multiple AI coding agents in parallel — Claude Code and Codex — each in isolated workspaces. Think of it as a management layer: spin up several agents on different tasks simultaneously, review their changes, then merge selectively. Potentially useful for parallelizing design iterations or running agents on independent parts of a project at once.
 
 ### Readout
+
+![Readout](assets/readout.jpeg)
 
 [Readout](https://www.readout.org/) is a macOS dashboard that consolidates dev environment monitoring — logs, servers, processes — into a single interface instead of juggling terminal windows. Potentially a cleaner way to keep an eye on what's running when multiple agents are active.
