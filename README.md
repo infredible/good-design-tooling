@@ -94,6 +94,8 @@ Pieces worth sitting with — on craft, quality, and what design actually means 
 
 - [animations.dev](https://animations.dev/) — Course by Emil Kowalski (design engineer at Linear) covering animation theory, CSS, and Framer Motion. Goes beyond syntax into what makes motion feel natural — easing, spring physics, timing, orchestration. Includes an AI skill file for coding agents and walkthroughs of how he builds and iterates on real components.
 
+- [Tools the Vercel Product Design Team Actually Uses](https://www.hannahhearth.com/posts/tools-the-vercel-product-design-team-actually-uses) — A snapshot of how a real design team is navigating a moment where tooling is fragmenting fast. No single solution; designers on the same team using completely different stacks, variable AI adoption, and an emerging split between canvas-based work and building directly in the browser.
+
 - [Agents with Taste](https://emilkowal.ski/ui/agents-with-taste) — Emil Kowalski on how to get agents to produce better visual work by codifying design principles explicitly. The core insight: almost every taste decision has a logical reason behind it — document that reasoning as a skill file and an agent can follow it consistently.
 
 ## To Be Tried
