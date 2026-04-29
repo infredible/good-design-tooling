@@ -33,6 +33,12 @@ Aimed at designers who write code and developers who design.
 
 Swap `Glass.aiff` for any file in `/System/Library/Sounds/` — `Ping.aiff`, `Funk.aiff`, etc.
 
+### CleanShot X
+
+[CleanShot X](https://cleanshot.com/) is a screenshot and screen recording tool for Mac.
+
+> **Note:** The floating thumbnail after capture makes it easy to drag screenshots directly into the terminal or Claude Code — handy for sharing UI context with an agent without breaking your flow.
+
 ### Wispr Flow
 
 [Wispr Flow](https://wisprflow.ai/) is a voice-to-text tool that works across any app. Useful for dictating prompts into Claude Code or Cursor without breaking flow to type — particularly good for longer context-setting instructions where speaking is faster than writing.
