@@ -12,6 +12,27 @@ Aimed at designers who write code and developers with strong product sense. The 
 
 [Ghostty](https://ghostty.org/) is a native terminal emulator built for performance. The two pair well: Ghostty handles split panes and fast rendering, Claude Code handles the heavy lifting.
 
+**Audio notifications when Claude Code finishes:** Claude Code supports hooks that fire on events. Add a `Notification` hook to `~/.claude/settings.json` to play a sound when it completes a task and hands control back to you — useful when running longer agentic tasks in the background.
+
+```json
+{
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Glass.aiff"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+Swap `Glass.aiff` for any file in `/System/Library/Sounds/` — `Ping.aiff`, `Funk.aiff`, etc.
+
 ### UIFork
 
 [UIFork](https://github.com/sambernhardt/uifork) solves a real friction point in agentic UI work: you can generate a dozen variations with an agent, but switching between them without UIFork means branch-hopping or commenting out code.
