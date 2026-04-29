@@ -121,3 +121,7 @@ Pieces worth sitting with — on craft, quality, and what design actually means 
 ### Conductor
 
 [Conductor](https://www.conductor.build/) is a macOS app for running multiple AI coding agents in parallel — Claude Code and Codex — each in isolated workspaces. Think of it as a management layer: spin up several agents on different tasks simultaneously, review their changes, then merge selectively. Potentially useful for parallelizing design iterations or running agents on independent parts of a project at once.
+
+### Readout
+
+[Readout](https://www.readout.org/) is a macOS dashboard that consolidates dev environment monitoring — logs, servers, processes — into a single interface instead of juggling terminal windows. Potentially a cleaner way to keep an eye on what's running when multiple agents are active.
