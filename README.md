@@ -33,6 +33,10 @@ Aimed at designers who write code and developers who design.
 
 Swap `Glass.aiff` for any file in `/System/Library/Sounds/` — `Ping.aiff`, `Funk.aiff`, etc.
 
+### Wispr Flow
+
+[Wispr Flow](https://wisprflow.ai/) is a voice-to-text tool that works across any app. Useful for dictating prompts into Claude Code or Cursor without breaking flow to type — particularly good for longer context-setting instructions where speaking is faster than writing.
+
 ### Cursor
 
 [Cursor](https://www.cursor.com/) — I use it alongside Claude Code rather than instead of it. Cursor stays open for when I need to actually read and navigate the code.
