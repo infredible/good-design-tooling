@@ -57,6 +57,14 @@ The MCP integration makes it two-way: the agent can query annotations and respon
 
 Worth keeping close when building with an agent: paste the relevant sections into a `CLAUDE.md` as project rules, or convert them into a Claude Code skill so they apply across projects. Either way, it gives an agent precise, checkable criteria rather than vague design direction.
 
+### Emil Kowalski's UI Skill
+
+[emilkowal.ski/skill](https://emilkowal.ski/skill) — Emil's UI principles packaged as a Claude Code skill: animations, design, code quality, and performance. Companion to his writing and animations.dev course; installs in one line.
+
+```bash
+npx skills add emilkowalski/skill
+```
+
 ### Karpathy-Inspired Claude Code Guidelines
 
 [andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) is a single `CLAUDE.md` file distilled from Andrej Karpathy's observations on where LLM coding agents consistently go wrong — silent assumptions, overcomplicated solutions, touching code they shouldn't.
@@ -85,6 +93,8 @@ Pieces worth sitting with — on craft, quality, and what design actually means 
 - [Family Values](https://benji.org/family-values) — A close read of how the Family crypto wallet achieves its feel through three principles: simplicity via gradual revelation, fluidity through transitions that give the interface physical rules, and delight placed deliberately where it has the most impact.
 
 - [animations.dev](https://animations.dev/) — Course by Emil Kowalski (design engineer at Linear) covering animation theory, CSS, and Framer Motion. Goes beyond syntax into what makes motion feel natural — easing, spring physics, timing, orchestration. Includes an AI skill file for coding agents and walkthroughs of how he builds and iterates on real components.
+
+- [Agents with Taste](https://emilkowal.ski/ui/agents-with-taste) — Emil Kowalski on how to get agents to produce better visual work by codifying design principles explicitly. The core insight: almost every taste decision has a logical reason behind it — document that reasoning as a skill file and an agent can follow it consistently.
 
 ## To Be Tried
 
