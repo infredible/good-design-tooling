@@ -8,6 +8,8 @@ Aimed at designers who write code and developers with strong product sense. The 
 
 ### Claude Code + Ghostty
 
+![Ghostty](assets/ghostty.jpg)
+
 [Claude Code](https://claude.ai/code) is Anthropic's CLI for Claude — runs in your terminal, understands your codebase, and can execute multi-step tasks autonomously. Less "autocomplete in an editor", more "agent that can read, write, and run code across your project."
 
 [Ghostty](https://ghostty.org/) is a native terminal emulator built for performance. The two pair well: Ghostty handles split panes and fast rendering, Claude Code handles the heavy lifting.
@@ -35,6 +37,8 @@ Swap `Glass.aiff` for any file in `/System/Library/Sounds/` — `Ping.aiff`, `Fu
 
 ### UIFork
 
+![UIFork](assets/uifork.png)
+
 [UIFork](https://github.com/sambernhardt/uifork) solves a real friction point in agentic UI work: you can generate a dozen variations with an agent, but switching between them without UIFork means branch-hopping or commenting out code.
 
 It uses file-based versioning — `Button.v1.tsx`, `Button.v2.tsx` — with a floating widget for runtime hot-swapping. Each version is a real file, so agents can generate new ones directly, you can diff them, and promoting a winner is a single command.
@@ -46,6 +50,8 @@ npx uifork watch
 ```
 
 ### Agentation
+
+![Agentation](assets/agentation.png)
 
 [Agentation](https://www.agentation.com/) is a desktop tool for annotating live UI and passing that context to an agent. You hover over elements, add notes, and get back structured output — CSS selectors, file paths, component hierarchy — that an agent like Claude Code can act on directly.
 
@@ -70,6 +76,8 @@ npx skills add anthropics/skills/frontend-design
 ```
 
 ### Emil Kowalski's Design Engineering Skill
+
+![Emil Kowalski's Skill](assets/emil-skill.jpg)
 
 [emilkowalski/skill](https://github.com/emilkowalski/skill/blob/main/skills/emil-design-eng/SKILL.md) — Emil's UI polish philosophy packaged as a skill: animation decisions, invisible details that compound, the principle that taste is trained not innate. When reviewing UI code, outputs a Before/After/Why table with specific, actionable changes. Companion to his [animations.dev](https://animations.dev/) course and [Agents with Taste](https://emilkowal.ski/ui/agents-with-taste) article.
 
@@ -114,14 +122,20 @@ Pieces worth sitting with — on craft, quality, and what design actually means 
 
 - [animations.dev](https://animations.dev/) — Course by Emil Kowalski (design engineer at Linear) covering animation theory, CSS, and Framer Motion. Goes beyond syntax into what makes motion feel natural — easing, spring physics, timing, orchestration. Walkthroughs of how he builds and iterates on real components.
 
+  ![animations.dev](assets/animations-dev.png)
+
 - [Agents with Taste](https://emilkowal.ski/ui/agents-with-taste) — Emil Kowalski on how to get agents to produce better visual work by codifying design principles explicitly. The core insight: almost every taste decision has a logical reason behind it — document that reasoning as a skill file and an agent can follow it consistently.
 
 ## To Be Tried
 
 ### Conductor
 
+![Conductor](assets/conductor.webp)
+
 [Conductor](https://www.conductor.build/) is a macOS app for running multiple AI coding agents in parallel — Claude Code and Codex — each in isolated workspaces. Think of it as a management layer: spin up several agents on different tasks simultaneously, review their changes, then merge selectively. Potentially useful for parallelizing design iterations or running agents on independent parts of a project at once.
 
 ### Readout
+
+![Readout](assets/readout.png)
 
 [Readout](https://www.readout.org/) is a macOS dashboard that consolidates dev environment monitoring — logs, servers, processes — into a single interface instead of juggling terminal windows. Potentially a cleaner way to keep an eye on what's running when multiple agents are active.
