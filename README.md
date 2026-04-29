@@ -35,7 +35,8 @@ Swap `Glass.aiff` for any file in `/System/Library/Sounds/` — `Ping.aiff`, `Fu
 
 ### UIFork
 
-<video src="assets/uifork-video.mp4" autoplay loop muted playsinline></video>
+https://github.com/user-attachments/assets/6c85152e-414a-4b84-ad9a-fed033143f1b
+
 
 [UIFork](https://github.com/sambernhardt/uifork) solves a real friction point in agentic UI work: you can generate a dozen variations with an agent, but switching between them without UIFork means branch-hopping or commenting out code.
 
@@ -49,7 +50,8 @@ npx uifork watch
 
 ### Agentation
 
-<video src="assets/agentation.mp4" autoplay loop muted playsinline></video>
+https://github.com/user-attachments/assets/0931b357-3ac9-44ae-ac2e-d213e9e0e63e
+
 
 [Agentation](https://www.agentation.com/) is a desktop tool for annotating live UI and passing that context to an agent. You hover over elements, add notes, and get back structured output — CSS selectors, file paths, component hierarchy — that an agent like Claude Code can act on directly.
 
@@ -123,6 +125,8 @@ Pieces worth sitting with — on craft, quality, and what design actually means 
 ## To Be Tried
 
 ### Conductor
+<img width="2982" height="2052" alt="conductor" src="https://github.com/user-attachments/assets/c559deba-66d0-4dd4-9fad-697072568dc9" />
+
 
 [Conductor](https://www.conductor.build/) is a macOS app for running multiple AI coding agents in parallel — Claude Code and Codex — each in isolated workspaces. Think of it as a management layer: spin up several agents on different tasks simultaneously, review their changes, then merge selectively. Potentially useful for parallelizing design iterations or running agents on independent parts of a project at once.
 
