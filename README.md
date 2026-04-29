@@ -30,6 +30,16 @@ npx uifork watch
 
 The MCP integration makes it two-way: the agent can query annotations and respond with updates, so feedback becomes a conversation rather than a one-shot prompt.
 
+## To Be Tried
+
+### Conductor
+
+[Conductor](https://www.conductor.build/) is a macOS app for running multiple AI coding agents in parallel — Claude Code and Codex — each in isolated workspaces. Think of it as a management layer: spin up several agents on different tasks simultaneously, review their changes, then merge selectively. Potentially useful for parallelizing design iterations or running agents on independent parts of a project at once.
+
+---
+
+## Tools
+
 ### Rauno's Web Interface Guidelines
 
 [interfaces](https://github.com/raunofreiberg/interfaces) by Rauno Freiberg is a living document of specific, opinionated details that separate good web UIs from mediocre ones — covering interactivity, typography, motion, touch, performance, and accessibility. Less "follow WCAG" and more "don't let hover states fire on touch press."
