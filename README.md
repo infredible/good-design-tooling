@@ -74,7 +74,7 @@ curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy
 
 ## Reading
 
-Pieces worth sitting with — on craft, quality, and what design actually means as the tools around it keep changing.
+Pieces worth sitting with — on craft, quality, and what design actually means as the tools around it keep changing. Includes articles and courses.
 
 - [Design is more than code](https://linear.app/now/design-is-more-than-code) — Karri Saarinen on why the "should designers code" debate misses the point. The real question is whether you're doing the upstream work: understanding the problem, forming a concept, then executing. Tools and mediums are secondary.
 
@@ -83,6 +83,8 @@ Pieces worth sitting with — on craft, quality, and what design actually means 
 - [Why is quality so rare?](https://linear.app/now/why-is-quality-so-rare) — Karri Saarinen on the recurring cycle where new technology enables quality work, then gradually optimizes it away. Quality is a choice, requires taste, and — contrary to the usual assumption — is good business strategy.
 
 - [Family Values](https://benji.org/family-values) — A close read of how the Family crypto wallet achieves its feel through three principles: simplicity via gradual revelation, fluidity through transitions that give the interface physical rules, and delight placed deliberately where it has the most impact.
+
+- [animations.dev](https://animations.dev/) — Course by Emil Kowalski (design engineer at Linear) covering animation theory, CSS, and Framer Motion. Goes beyond syntax into what makes motion feel natural — easing, spring physics, timing, orchestration. Includes an AI skill file for coding agents and walkthroughs of how he builds and iterates on real components.
 
 ## To Be Tried
 
