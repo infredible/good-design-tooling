@@ -72,6 +72,18 @@ Four principles: think before coding, simplicity first, surgical changes, goal-d
 curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md
 ```
 
+## Reading
+
+Pieces worth sitting with — on craft, quality, and what design actually means as the tools around it keep changing.
+
+- [Design is more than code](https://linear.app/now/design-is-more-than-code) — Karri Saarinen on why the "should designers code" debate misses the point. The real question is whether you're doing the upstream work: understanding the problem, forming a concept, then executing. Tools and mediums are secondary.
+
+- [Output isn't design](https://linear.app/now/output-isn-t-design) — Design is the search for fit between a form and its context. AI tools that generate polished-looking interfaces don't resolve the underlying tensions — they just make it easier to confuse production with problem-solving.
+
+- [Why is quality so rare?](https://linear.app/now/why-is-quality-so-rare) — Karri Saarinen on the recurring cycle where new technology enables quality work, then gradually optimizes it away. Quality is a choice, requires taste, and — contrary to the usual assumption — is good business strategy.
+
+- [Family Values](https://benji.org/family-values) — A close read of how the Family crypto wallet achieves its feel through three principles: simplicity via gradual revelation, fluidity through transitions that give the interface physical rules, and delight placed deliberately where it has the most impact.
+
 ## To Be Tried
 
 ### Conductor
