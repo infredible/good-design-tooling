@@ -33,6 +33,10 @@ Aimed at designers who write code and developers who design.
 
 Swap `Glass.aiff` for any file in `/System/Library/Sounds/` — `Ping.aiff`, `Funk.aiff`, etc.
 
+### Cursor
+
+[Cursor](https://www.cursor.com/) is an AI-first code editor. I use it alongside Claude Code rather than instead of it — Claude Code runs in the Cursor terminal and handles the agentic work, while Cursor stays open for when I actually need to read and navigate the code. The two complement each other well: Claude Code for execution, Cursor for understanding what's happening.
+
 ### UIFork
 
 https://github.com/user-attachments/assets/6c85152e-414a-4b84-ad9a-fed033143f1b
