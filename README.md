@@ -30,6 +30,12 @@ npx uifork watch
 
 The MCP integration makes it two-way: the agent can query annotations and respond with updates, so feedback becomes a conversation rather than a one-shot prompt.
 
+### Rauno's Web Interface Guidelines
+
+[interfaces](https://github.com/raunofreiberg/interfaces) by Rauno Freiberg is a living document of specific, opinionated details that separate good web UIs from mediocre ones — covering interactivity, typography, motion, touch, performance, and accessibility. Less "follow WCAG" and more "don't let hover states fire on touch press."
+
+Worth keeping close when building with an agent: paste the relevant sections into a `CLAUDE.md` as project rules, or convert them into a Claude Code skill so they apply across projects. Either way, it gives an agent precise, checkable criteria rather than vague design direction.
+
 ### Karpathy-Inspired Claude Code Guidelines
 
 [andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) is a single `CLAUDE.md` file distilled from Andrej Karpathy's observations on where LLM coding agents consistently go wrong — silent assumptions, overcomplicated solutions, touching code they shouldn't.
