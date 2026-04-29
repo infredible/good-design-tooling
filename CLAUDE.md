@@ -28,4 +28,4 @@ Readers are people in tech who already have hands-on experience designing or bui
 The README is the primary document. Sections:
 - **Overview** — one paragraph on what this repo is and who it's for
 - **Tools** — one subsection per tool
-- **Getting Started / Contributing** — fill in as the repo grows
+- **To Be Tried** — always the last section; tools that look promising but haven't been used enough to endorse yet
