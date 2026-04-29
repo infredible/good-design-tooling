@@ -29,3 +29,18 @@ npx uifork watch
 [Agentation](https://www.agentation.com/) is a desktop tool for annotating live UI and passing that context to an agent. You hover over elements, add notes, and get back structured output — CSS selectors, file paths, component hierarchy — that an agent like Claude Code can act on directly.
 
 The MCP integration makes it two-way: the agent can query annotations and respond with updates, so feedback becomes a conversation rather than a one-shot prompt.
+
+### Karpathy-Inspired Claude Code Guidelines
+
+[andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) is a single `CLAUDE.md` file distilled from Andrej Karpathy's observations on where LLM coding agents consistently go wrong — silent assumptions, overcomplicated solutions, touching code they shouldn't.
+
+Four principles: think before coding, simplicity first, surgical changes, goal-driven execution. Drop it into any project and Claude Code will ask before assuming, write less code, and leave unrelated things alone.
+
+```bash
+# as a Claude Code plugin (applies across all projects)
+/plugin marketplace add forrestchang/andrej-karpathy-skills
+/plugin install andrej-karpathy-skills@karpathy-skills
+
+# or per-project
+curl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md
+```
