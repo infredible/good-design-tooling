@@ -73,6 +73,27 @@ https://github.com/user-attachments/assets/0931b357-3ac9-44ae-ac2e-d213e9e0e63e
 
 The MCP integration makes it two-way: the agent can query annotations and respond with updates, so feedback becomes a conversation rather than a one-shot prompt.
 
+### design.md
+
+[design.md](https://github.com/google-labs-code/design.md) is a proposed standard from Google Labs for communicating visual identity systems to AI coding agents. The format combines YAML front matter (design tokens: colors, typography, spacing) with markdown sections for design rationale, all in a single `DESIGN.md` file that lives in a project repo. The idea is to give agents a persistent, structured source of truth for a design system rather than re-explaining it in every prompt.
+
+It's in alpha and not widely adopted — the spec, token schema, and CLI are still in flux. But the format itself is usable now, and there's a reasonable case for adopting it ahead of tooling support.
+
+**What you can do today:**
+
+- **Adopt the file format as a structured CLAUDE.md supplement.** Write a `DESIGN.md` in the project root following the spec's two-layer structure: YAML front matter for tokens, markdown sections for rationale. Agents can parse it without dedicated tooling — it reads naturally. Reference it explicitly in prompts or `CLAUDE.md` rules.
+
+- **Use it for design token documentation even if you don't use the CLI.** The `{path.to.token}` reference syntax makes token relationships legible across a file. That's useful on its own, independently of any export or lint step.
+
+- **Run the CLI for linting and export if you want tighter integration.** The CLI validates the structure, runs WCAG contrast checks, and can export to Tailwind config or W3C Design Token Format — useful as CI gets added or when handing off to tooling that understands those formats.
+
+```bash
+npx design-md lint DESIGN.md
+npx design-md export --format tailwind
+```
+
+If the standard lands, files written now will be compatible. If it doesn't, you still have a well-structured design reference that any agent can read.
+
 ### Rauno's Web Interface Guidelines
 
 [interfaces](https://github.com/raunofreiberg/interfaces) by Rauno Freiberg is a living document of specific, opinionated details that separate good web UIs from mediocre ones — covering interactivity, typography, motion, touch, performance, and accessibility. Less "follow WCAG" and more "don't let hover states fire on touch press."
